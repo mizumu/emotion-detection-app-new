@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emotion Classifier</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+    <header>   
+        <img class="header_img" src="https://aidemyexstorage.blob.core.windows.net/aidemycontents/1621500180546399.png" alt="Aidemy">
+        <a class="header-logo" href="#">Emotion Classifier</a>
+    </header>
+
+    <div class="main">    
+        <h2> AIが送信された画像の感情を識別します</h2>
+        <h3> 怒り、うんざり、恐怖、幸せ、素、悲しい、驚き</h3>
+        <p>画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="診断" type="submit">
+        </form>
+        <div class="answer"><b>{{answer}}</b></div>
+        <div class="img-box">
+        <img src="./static/uploads/{{original_name}}" alt="画像">
+        </div>
+    </div>
+
+    <footer>
+        <img class="footer_img" src="https://aidemyexstorage.blob.core.windows.net/aidemycontents/1621500180546399.png" alt="Aidemy">
+        <small>&copy; 2023 Konbu</small>   
+    </footer>
+</body>
+</html>
