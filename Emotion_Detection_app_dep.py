@@ -12,7 +12,6 @@ from tensorflow.keras.applications.vgg16 import VGG16
 from tensorflow.keras.models import Model, Sequential
 from tensorflow.keras import optimizers
 import tensorflow.keras as keras
-from keras.callbacks import EarlyStopping
 
 import numpy as np
 
